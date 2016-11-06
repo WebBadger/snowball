@@ -1,39 +1,59 @@
+html{
+	font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
 }
 
 header {
-	background-image: ...;
+	background-image: url(img/termomite-header-image.jpg);
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	position: relative;
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
 }
 
-#header-content{
+#header-content {
 	position: absolute;
 	right:0;
-	left: 75%;
+	top: 10vh;
+	width: 50%;
+	box-sizing: border-box;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	color: white;
+	text-shadow: 0 0 1em #000;
 }
 
 #header-logo {
-	
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 50
+	font-size: 5rem;
 }
 
 #header-slogan {
 	
 }
 
-#shortDesc{
+#short-desc{
 	/*text-align: left;
 	margin-left: 5%;
 	column-count: 2;
 	column-gap: 15%;*/
 	padding-top: 50%;
-	width: 100%;
+	/*width: 100%;*/
+	float: left;
+	width: 40%;
+	margin-left: 5%;
 }
 
-#sd{
+{
 	float: left;
 	width: 40%;
 	margin-left: 5%; 
@@ -44,4 +64,14 @@ footer{
 	bottom: 0;
 	text-align: center;
 	width: 100%;
+}
+
+@media screen and (max-width: 480px;) {
+	header {
+		background-position: center;
+	}
+
+	#header-content { 
+		width: 100%;
+	}
 }
