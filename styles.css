@@ -1,47 +1,197 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.5;
 }
 
-header {
-	background-image: ...;
-	width: 100%;
-	height: 100%;
-	position: relative;
+h1 {
+  font-size: 5rem;
 }
 
-#header-content{
-	position: absolute;
-	right:0;
-	left: 75%;
+.section-header {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+::selection {
+  color: #333;
+  background-color: #43daf2;
+  text-shadow: none;
+}
+
+.color-section ::selection {
+  color: #43daf2;
+  background-color: #333;
+}
+
+#site-header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/termomite-header-image-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 .5em #000;
+}
+
+#header-content {
+  position: absolute;
+  right: 6%;
+  top: 10vh;
+  width: 35%;
 }
 
 #header-logo {
-	
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
-#header-slogan {
-	
+#introduction {
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
-#shortDesc{
-	/*text-align: left;
-	margin-left: 5%;
-	column-count: 2;
-	column-gap: 15%;*/
-	padding-top: 50%;
-	width: 100%;
+#site-footer {
+  padding: 2rem 0;
 }
 
-#sd{
-	float: left;
-	width: 40%;
-	margin-left: 5%; 
+#site-footer p {
+  margin: 0;
 }
 
-footer{
-	padding-top: 5rem;
-	bottom: 0;
-	text-align: center;
-	width: 100%;
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.group:after, .content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.color-section {
+  background-color: #43daf2;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.content-wrapper {
+  padding: 0 4rem;
+  margin: auto;
+  margin-bottom: 6rem;
+  max-width: 128rem;
+}
+
+.bleed-image-section .content-wrapper, .color-section .content-wrapper {
+  margin: 0 auto;
+}
+
+.column-styling {
+  margin: 2rem;
+}
+
+.column-styling p:first-child {
+  margin-top: 0;
+}
+
+.column-styling p:last-child {
+  margin-bottom: 0;
+}
+
+.column-styling img {
+  width: 100%;
+}
+
+.bleed-image-section img {
+  width: 100%;
+}
+
+.image-blyline {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+#site-header .image-blyline {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.bleed-image-section .image-blyline {
+  margin-
+}
+
+@media screen and (min-width: 801px) {
+  .half-widht-column {
+    width: calc(46% - 4rem);
+  }
+
+  .three-quarters-column {
+    width: calc(75% - 4rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  body, h2 {
+    font-size: 2rem;
+  }
+
+  #site-header {
+    background-image: url(img/termomite-header-image-mobile.jpg);
+    text-align: center;
+  }
+
+  #header-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    top: 0;
+    right: 0;
+  }
+
+  .image-blyline {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #site-footer p {
+    margin: 2rem; 0;
+  }
+
+  .color-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .content-wrapper {
+    padding: 0 1rem;
+  }
+
+  .column-styling {
+    margin: 2rem;
+  }
 }
